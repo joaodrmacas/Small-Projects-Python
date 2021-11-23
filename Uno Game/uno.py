@@ -144,6 +144,8 @@ def main():
         no_turn = non_turn(turn,user,pc)
         c=-1
         while c==-1:
+            clear()
+            print(f"PC {pc}")
             c = play_card(turn,card,deck,discard)
         discard.receive_card(c)
         turn = card_effect(deck,discard,c,turn,no_turn)

@@ -11,6 +11,7 @@ class Card:
     
     def __repr__(self) -> str:
         return f"({self.color}-{self.name})"
+        
 class Deck:
 
     def __init__(self) -> None:
@@ -48,6 +49,7 @@ class Deck:
         for i in range(7):
             l.append(self.deal_card())
         return l    
+
 class Player:
     def __init__(self,name,hand) -> None:
         self.name = name
